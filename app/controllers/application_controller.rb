@@ -29,7 +29,7 @@ class ApplicationController < ActionController::Base
           session.inspect, 
           params.inspect, 
           request.env.inspect,
-          signed_in? ? current_user : nil)
+          nil)
       end
     rescue => e
       logger.error("Failure to send error e-mail.");

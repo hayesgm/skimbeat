@@ -26,3 +26,4 @@ ActionMailer::Base.smtp_settings = {
     :password => "huskyhusky" 
 }
 
+MAILER_FROM = "chattrllc@gmail.com" #This is where to send error emails from
