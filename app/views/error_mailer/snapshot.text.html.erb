@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body style="font-family:Georgia,Georgia,serif;">
+
+  <h1>Flyer</h1>
+
+  <p>
+    &nbsp;Administrator,
+  </p>
+
+    An exception <%= @exception %> has occured at <%= Time.now() %> on Flyer.<br/>
+	
+	<p>
+		Exception: <br/>
+		<%= @exception %>
+	</p>
+	
+	<% if @user.nil? %>
+		<p>
+			Not signed-in user
+		</p>
+	<% else %>
+		<p>
+			<% if !@user.name.nil? && !@user.state.nil? && !@user.id.nil? %>
+				User: <%=h @user.name %> (<%=h @user.id %>)-- State: <%=h @user.state %>
+			<% end %>
+		</p>
+	<% end %>
+	
+	<p>
+		Trace: <br/>
+		<%= @trace %>
+	</p>
+	
+	<p>
+		Params: <br/>
+		<%= @params %>
+	</p>
+	
+	<p>
+		Request: <br/>
+		<%= @request %>
+	</p>
+	
+	<p>
+		Session: <br/>
+		<%= @session %>
+	</p>
+	
+	<% if !@user.nil? %>
+		<p>
+			User: <br/>
+			<%= @user.inspect %>
+		</p>
+	<% end %>
+	
+  <p>
+  	You've flown too close to the sun,
+  	&nbsp;-The Flyer Server
+  </p>
+  </body>
+</html> 
