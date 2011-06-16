@@ -7,10 +7,10 @@ class ErrorMailer < ActionMailer::Base
   
   protected
     def setup_error_email(exception, trace, session, params, request, user)
-      @recipients  = "hayesgm@gmail.com,robert@useflyer.com,matt@useflyer.com" #for now, just send direct to me and rob
+      @recipients  = "hayesgm@gmail.com,packrlane@gmail.com,robert@useflyer.com,matt@useflyer.com" #for now, just send direct to me and rob
       @from        = MAILER_FROM
       headers         "Reply-to" => MAILER_FROM
-      @subject     = "[Panther] "
+      @subject     = "[Skimbeat] "
       @sent_on     = Time.now
       @body[:exception] = exception
       @body[:trace] = trace
