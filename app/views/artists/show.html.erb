@@ -1,8 +1,13 @@
-<p>
-  <b>Name:</b>
-  <%=h @artist.name %>
-</p>
-
-
-<%= link_to 'Edit', edit_artist_path(@artist) %> |
-<%= link_to 'Back', artists_path %>
+<div data-role="page">
+	<div data-role="header">
+		<h1><%=h @artist.name %></h1>
+	</div>
+	
+	<div data-role="content">
+		<%=h @artist.name %>
+	</div>
+	
+	<div data-role="footer">
+		<%= link_to 'Back', artists_path %>
+	</div>
+</div>

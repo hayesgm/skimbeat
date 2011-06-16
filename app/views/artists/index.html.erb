@@ -1,20 +1,13 @@
-<h1>Listing artists</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-  </tr>
-
-<% @artists.each do |artist| %>
-  <tr>
-    <td><%=h artist.name %></td>
-    <td><%= link_to 'Show', artist %></td>
-    <td><%= link_to 'Edit', edit_artist_path(artist) %></td>
-    <td><%= link_to 'Destroy', artist, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New artist', new_artist_path %>
+<div data-role="page">
+	<div data-role="header"><h1>Listing artists</h1></div>
+	<div data-role="content">
+		<ul data-role="listview" data-theme="d">
+			<% @artists.each do |artist| %>
+		  		<li>
+		  			<%= link_to h(artist.name), artist %>
+				</li>
+			<% end %>
+		</ul>
+	</div>
+	<div data-role="footer"><%= link_to 'New artist', new_artist_path %></div>
+</div>
