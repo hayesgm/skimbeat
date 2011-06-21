@@ -1,16 +1,11 @@
 
 <style>
-	#logo {
-		background-image:url(/images/skimbeat2.png);
-		width:355px;
-		height:110px;
-		
-	}
+	
 </style>
-<div data-role="page" data-theme="d">
-	<div id=logo>
-		
-	</div>
+<div data-role="page">
+	<div data-role="header">
+		<h1>Page Title</h1>
+	</div><!-- /header -->
 	<a href="index.html" data-role="button" data-theme="d">Theme d</a>
 	<div data-role="fieldcontain">
     <label for="search"></label>
