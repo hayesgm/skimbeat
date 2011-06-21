@@ -1,31 +1,33 @@
 
 <style>
 	#logo {
-		background-image:url(/images/skimbeat2.png);
-		width:355px;
-		height:110px;
+		background-image:url(/images/skimbeat3.png);
+		background-repeat:no-repeat;
+		width:300px;
+		height:100px;
+		margin:0 auto;
 		
 	}
 	.bottombutton{
 		margin:0 auto;
-		width:355px;
+		width:235px;
 	}
 </style>
 <div data-role="page" data-theme="d">
 	<div id=logo>
+		
 	</div>
 	<div data-role="fieldcontain">
     <label for="search"></label>
     <input type="search" name="password" id="search" value="Enter artist or song name" />
 	</div>
-	<a href="index.html" data-role="button" data-theme="d">Theme d</a>
 	<div data-role="content">	
-		<p>Page content goes here bitch.</p>		
+			
 	</div><!-- /content -->
 	
 	<div data-role="controlgroup" data-type="horizontal" data-theme="d">
-		<div class="bottombutton"><a href="<%= artists_url %>" data-role="button" >browse</a>
-		<a href="<%= new_artist_path %>" data-role="button" >new artist</a> 
+		<div class="bottombutton"><a href="<%= artists_url %>" data-role="button" >Browse</a>
+		<a href="<%= new_artist_path %>" data-role="button" >Submit</a> 
 		</div>
 	</div><!-- /footer -->
 </div>
