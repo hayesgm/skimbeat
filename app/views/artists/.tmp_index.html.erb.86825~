@@ -1,0 +1,13 @@
+<div data-role="page">
+	<div data-role="header"><h1>Listing artists</h1></div>
+	<div data-role="content">
+		<ul data-role="listview" data-theme="d">
+			<% @artists.each do |artist| %>
+		  		<li>
+		  			<%= link_to h(artist.name), artist %>
+				</li>
+			<% end %>
+		</ul>
+	</div>
+	<div data-role="footer"><%= link_to 'New artist', new_artist_path %></div>
+</div>
