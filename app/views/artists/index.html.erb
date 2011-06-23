@@ -1,5 +1,37 @@
+<style>	
+		.ui-bar .ui-btn .ui-btn-inner { 
+			padding-top: 40px !important; 
+			}
+			
+		.ui-bar .ui-btn .ui-icon { 
+			width: 30px!important;
+			height: 30px!important; 
+			margin-left: -15px !important;
+			box-shadow: none!important; 
+	 		-moz-box-shadow: none!important; 
+			-webkit-box-shadow: none!important;
+			-webkit-border-radius: none !important; 
+			border-radius: none !important; 
+			
+			}
+			
+		#home .ui-icon {
+			background:  url(/images/homenote.png) 50% 50% no-repeat;
+			background-size: 24px 22px;
+			 }
+			 
+		#newartist .ui-icon { 
+			background:  url(/images/add.png) 50% 50% no-repeat;
+			background-size: 24px 16px;
+		  }
+		
+	</style> 
+
+
+
 <div data-role="page">
 	<div data-role="header"><h1>Listing artists</h1></div>
+	
 	<div data-role="content">
 		<ul data-role="listview" data-theme="d">
 			<% @artists.each do |artist| %>
@@ -9,5 +41,18 @@
 			<% end %>
 		</ul>
 	</div>
-	<div data-role="footer"><%= link_to 'New artist', new_artist_path %></div>
+	
+		
+		<div data-role="footer" class="ui-bar">
+			<div data-role="navbar" class="ui-bar" data-grid="d">
+		<ul>
+	<li><a href="index.html" id="home" data-role="button" data-icon="custom" data-theme="d">Home</a></li>
+	<li><a href="index.html" id="newartist" data-role="button" data-icon="custom" data-theme="d">New Artist</a></li>
+		</ul>
+			</div>
+</div>
+		
+		<!-- <%= link_to 'New artist', new_artist_path %> -->  
+	
+	
 </div>
