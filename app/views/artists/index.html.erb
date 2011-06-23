@@ -1,31 +1,4 @@
-<style>	
-		.ui-bar .ui-btn .ui-btn-inner { 
-			padding-top: 40px !important; 
-			}
-			
-		.ui-bar .ui-btn .ui-icon { 
-			width: 30px!important;
-			height: 30px!important; 
-			margin-left: -15px !important;
-			box-shadow: none!important; 
-	 		-moz-box-shadow: none!important; 
-			-webkit-box-shadow: none!important;
-			-webkit-border-radius: none !important; 
-			border-radius: none !important; 
-			
-			}
-			
-		#home .ui-icon {
-			background:  url(/images/homenote.png) 50% 50% no-repeat;
-			background-size: 24px 22px;
-			 }
-			 
-		#newartist .ui-icon { 
-			background:  url(/images/add.png) 50% 50% no-repeat;
-			background-size: 24px 16px;
-		  }
-		
-	</style> 
+ 
 
 
 
@@ -45,12 +18,14 @@
 		
 		<div data-role="footer" class="ui-bar">
 			<div data-role="navbar" class="ui-bar" data-grid="d">
-		<ul>
-	<li><a href="index.html" id="home" data-role="button" data-icon="custom" data-theme="d">Home</a></li>
-	<li><a href="index.html" id="newartist" data-role="button" data-icon="custom" data-theme="d">New Artist</a></li>
-		</ul>
-			</div>
+			</div><div data-role="controlgroup" data-type="horizontal" data-theme="d">
+		<div class="listbottombutton">
+		<a href="<%= artists_url %>" data-role="button" class="home" >Home</a>
+		<a href="<%= new_artist_path %>" data-role="button" class="newartist" >New Artist</a> 
+		</div>
+		</div>
 </div>
+		
 		
 		<!-- <%= link_to 'New artist', new_artist_path %> -->  
 	
