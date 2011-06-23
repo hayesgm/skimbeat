@@ -1,0 +1,52 @@
+	#logo {
+		background-image:url(/images/skimbeat3.png);
+		background-repeat:no-repeat;
+		width:270px;
+		height:100px;
+		margin:0 auto;
+		
+	}
+	.bottombutton{
+		margin:0 auto;
+		width:217px;
+	}
+
+		.ui-bar .ui-btn .ui-btn-inner { 
+			padding-top: 30px !important; 
+			}
+			
+		.ui-bar .ui-btn .ui-icon { 
+			width: 30px!important;
+			height: 30px!important; 
+			margin-left: -15px !important;
+			box-shadow: none!important; 
+	 		-moz-box-shadow: none!important; 
+			-webkit-box-shadow: none!important;
+			-webkit-border-radius: none !important; 
+			border-radius: none !important; 
+			
+			}
+			
+		#home .ui-icon {
+			background:  url(/images/homenote.png) 50% 50% no-repeat;
+			background-size: 20px 20px;
+			border-top-left-radius: 10px 5px;
+			
+			 }
+			 
+		.home{
+			background: url(/images/homenote.png) 50% 25% no-repeat;
+		}
+			 
+		#newartist .ui-icon { 
+			background:  url(/images/add.png) 50% 50% no-repeat;
+			background-size: 20px 20px;
+		  }
+		.newartist {
+			background: url(/images/add.png) 50% 25% no-repeat;
+			
+		}
+		.listbottombutton{
+		margin:0 auto;
+		width:138px;
+		}
