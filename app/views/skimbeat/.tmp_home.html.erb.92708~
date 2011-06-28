@@ -1,0 +1,18 @@
+
+<div data-role="page" data-theme="d">
+	<div id=logo>
+	</div>
+	<div data-role="fieldcontain">
+    <label for="search"></label>
+    <input type="search" name="password" id="search" value="artist or song name" />
+	</div>
+	<div data-role="content">	
+			
+	</div><!-- /content -->
+	
+	<div data-role="controlgroup" data-type="horizontal" data-theme="d">
+		<div class="bottombutton"><a href="<%= artists_url %>" data-role="button" >Browse</a>
+		<a href="<%= new_artist_path %>" data-role="button" >Submit</a> 
+		</div>
+	</div><!-- /footer -->
+</div>
