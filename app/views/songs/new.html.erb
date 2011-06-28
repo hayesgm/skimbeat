@@ -1,23 +1,32 @@
-<h1>New song</h1>
-
-<% form_for(@song) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :artist_id %><br />
-    <%= f.text_field :artist_id %>
-  </p>
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :lyrics %><br />
-    <%= f.text_area :lyrics %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
-
-<%= link_to 'Back', songs_path %>
+<div data-role="page">
+	<div data-role="header"> <h2>New song bitches</h2></div>
+	<div data-role="content" data-theme="d">
+	<% form_for(@song) do |f| %>
+	  <%= f.error_messages %>
+	
+	  <p>
+	    <%= f.label :artist_id %><br />
+	    <%= f.text_field :artist_id %>
+	  </p>
+	  <p>
+	    <%= f.label :title %><br />
+	    <%= f.text_field :title %>
+	  </p>
+	  <p>
+	    <%= f.label :lyrics %><br />
+	    <%= f.text_area :lyrics %>
+	  </p>
+	  <p>
+	    <%= f.submit 'Create' %>
+	  </p>
+	<% end %>
+	
+	<div data-role="footer" class="ui-bar">
+			<div data-role="navbar" class="ui-bar" data-grid="d">
+			</div><div data-role="controlgroup" data-type="horizontal" data-theme="d">
+		<div class="listbottombutton">
+		<a href="<%= artists_url %>" data-role="button" class="home" >Home</a>
+		<a href="<%= songs_path %>" data-role="button" class="newartist" >Back</a> 
+		</div>
+	</div>
+</div>
