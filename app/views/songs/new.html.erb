@@ -1,12 +1,12 @@
 <div data-role="page">
-	<div data-role="header"> <h2>New song bitches</h2></div>
+	<div data-role="header"> <h2><%= @song.artist.name%></h2></div>
 	<div data-role="content" data-theme="d">
 	<% form_for(@song) do |f| %>
 	  <%= f.error_messages %>
 	
 	  <p>
-	    <%= f.label :artist_id %><br />
-	    <%= f.text_field :artist_id %>
+	 
+	    <%= f.hidden_field :artist_id %>
 	  </p>
 	  <p>
 	    <%= f.label :title %><br />
