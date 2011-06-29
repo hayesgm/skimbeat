@@ -59,3 +59,7 @@
 			width:200px;
 			
 		}
+		.hideme{
+			visibility:hidden;
+			display:none;
+		}
