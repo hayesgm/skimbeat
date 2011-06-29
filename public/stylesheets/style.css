@@ -59,7 +59,7 @@
 			width:200px;
 			
 		}
-		.hideme{
+		#hideme{
 			visibility:hidden;
 			display:none;
 		}
