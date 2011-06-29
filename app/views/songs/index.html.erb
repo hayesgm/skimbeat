@@ -1,5 +1,6 @@
 <div data-role="page">
 	<div data-role="header"><h1>Listing songs</h1> </div>
+<div data-role="content">
 	<table>
 	  <tr>
 	    <th>Artist</th>
@@ -20,6 +21,16 @@
 	</table>
 	
 	<br />
+</div>	
+	<div data-role="footer" class="ui-bar">
+		<div data-role="navbar" class="ui-bar" data-grid="d"</div>
+		<div data-role="controlgroup" data-type="horizontal" data-theme="d">
+		<div class="listbottombutton"> 	
+		<%= link_to 'New song', new_song_path %>
+		<%= link_to 'Back', songs_path %>
+		</div>
+	</div>
 	
-	<%= link_to 'New song', new_song_path %>
 </div>
+
+
