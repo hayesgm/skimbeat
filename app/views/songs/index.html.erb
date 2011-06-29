@@ -10,7 +10,7 @@
 	
 	<% @songs.each do |song| %>
 	  <tr>
-	    <td><%=h song.artist_id %></td>
+	    <td><%=h song.artist.name %></td>
 	    <td><%=h song.title %></td>
 	    <td><%=h song.lyrics %></td>
 	    <td><%= link_to 'Show', song %></td>
