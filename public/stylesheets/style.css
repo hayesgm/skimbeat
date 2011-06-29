@@ -54,3 +54,8 @@
 		.backbutton{
 			background: url(/images/backbutton.png) 50% 25% no-repeat;
 		}
+		.artistbottombutton{
+			margin:0 auto;
+			width:200px;
+			
+		}
