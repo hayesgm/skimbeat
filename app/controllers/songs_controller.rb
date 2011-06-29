@@ -1,8 +1,17 @@
 class SongsController < ApplicationController
+  
+  params = { }
+  params = { :artist_id => 1 }
+  params.include?(:artist_id)
   # GET /songs
   # GET /songs.xml
   def index
     @songs = Song.all
+    
+    if params.include?(:artist_id)
+      @artist = Artist.find(params[:artist_id])
+      @songs = @artist.songs
+    end
 
     respond_to do |format|
       format.html # index.html.erb
