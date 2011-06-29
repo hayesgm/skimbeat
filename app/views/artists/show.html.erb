@@ -13,9 +13,9 @@
 			</div>
 		<div data-role="controlgroup" data-type="horizontal" data-theme="d">
 		<div class="artistbottombutton">
-		<a href="<%= artists_url %>" data-role="button" class="home" >Home</a>
-		<a href="<%= songs_path %>" data-role="button" class="newartist" >Add Song</a> 
-		<a href="<%= songs_path %>" data-role="button" class="backbutton" >Back</a> 
+		<a href="/" data-role="button" class="home" >Home</a>
+		<a href="/artists/<%= @artist.id %>/songs/new" data-role="button" class="newartist" >Add Song</a> 
+		<a href="/artists" data-role="button" class="backbutton" >Back</a> 
 		</div>
 	</div>	
 </div>
